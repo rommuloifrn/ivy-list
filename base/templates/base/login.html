@@ -1,0 +1,8 @@
+<h1>Login</h1>
+<a href="{% url 'tasks' %}">Go back</a>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="login">
+</form>
+<p>dont have an account? <a href="{% url 'register' %}">register</a> </p>
